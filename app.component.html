@@ -1,0 +1,31 @@
+<H1>Important Events In Angular</H1>
+
+<button (click)="myEvent('Awais')">click Event</button>
+<br>
+<H1>KeyUp Event</H1>
+<input type="text" (keyup)="myEvent('keyup event')"/>
+<br>
+<h1>Get Text Box Value</h1>
+<input type="text" #box (keyup)="myEvent(box.value)"/>
+<br>
+<h1>Enter Button Event</h1>
+
+<input type="text" #box (keyup.enter)="myEvent(box.value)"/>
+<br>
+<h1>Space Button Event</h1>
+<input type="text" #box (keyup.space)="myEvent('box.value')" />
+<br>
+<h1>Key Down Event</h1>
+<input type="text" #box (keydown)='myEvent(box.value)' />
+<br> <br> 
+<H2>Similarly We can use Enter and Space button with this like keyup event</H2>
+<br>
+<h1>Now Blur Event</h1>
+<input type="text" (blur)="myEvent('blue event')" />
+<br>
+<h1>now Mouseover Event</h1>
+<div (mouseover)="myEvent('mouse in')"
+style="background-color: aqua;"
+>Mouseover</div>
+<br>
+<h1>Similarly use Mouseleave in the place off mouseover for Mouseleave Event</h1>
